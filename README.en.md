@@ -1,7 +1,7 @@
 ![MACMUN Logo](./public/images/logo480x480.png)
 # MACMUN The Sequel
 
-Model United Nations (MUN) is an event designed to facilitate debates among students on topics concerning the United Nations, aiming to promote both social interaction among participants and the improvement of their English skills.<a href="https://mevcollegemun.web.app/" target="_blank">Mev College Model United Nations</a> is a Model United Nations simulation organized by Ankara MEV Highschool. As a student of the school, I was also the head of the IT team and it was my responsibility to create the website.
+Model United Nations (MUN) is an event designed to facilitate debates among students on topics concerning the United Nations, aiming to promote both social interaction among participants and the improvement of their English skills. <a href="https://mevcollegemun.web.app/" target="_blank">Mev College Model United Nations</a> is a Model United Nations simulation organized by Ankara MEV Highschool. As a student of the school, I was also the head of the IT team and it was my responsibility to create the website.
 
 ## Purpose of the Site
 To ensure the event's visibility in search engines and encourage those who are undecided to join the event.
