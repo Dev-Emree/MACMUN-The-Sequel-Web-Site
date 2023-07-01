@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('includes/head.ejs') %> 
+	<title>Pricing Details | MACMUN</title>
+	<link rel="stylesheet" href="/public/css/pricing.css" />
+</head>
+
+<body>
+    <%- include('includes/navbars.ejs') %> 
+	<img src="/public/images/logo240x240.png" alt="Home" class="home-logo" onclick="window.location.href='/'" />
+	<main>
+		<section id="fees">
+            <% for(const item in data){ %> 
+			<div class="fees">
+				<h1><%= item %> : <b><%=data[item]%>₺</b></h1>
+			</div>
+            <% } %>
+		</section>
+	</main>
+	<div data-nosnippet onclick="window.open('https://dev-emre.web.app/', '_blank')" class="producer">
+		Produced by Emre Ekiz
+	</div>
+	<script src="/public/js/includes/navbars.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("html").on("contextmenu", function(e) {
+				return false;
+			});
+		});
+	</script>
+</body>
+
+</html>

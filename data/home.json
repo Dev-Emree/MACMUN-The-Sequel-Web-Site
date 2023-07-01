@@ -1,0 +1,18 @@
+{
+    "counter":{
+        "english":["COUNTDOWN","Days","Hours","Minutes","Seconds","14-16 October","CONTACTS","Scroll"],
+        "turkce":["GERİ SAYIM","Gün", "Saat", "Dakika", "Saniye", "14-16 Ekim","İletişim", "Kaydır"],
+        "deutsch":["COUNTDOWN","Tage","Stunden","Minuten","Sekunden","14.-16. Oktober","KONTAKTE","Scrollen"]
+    },
+    "date":1665694800000,
+    "contacts":{
+        "mail" : "secreteriat@mevcollegemun.org",
+        "tel" : "+90 (312) 235 03 53"
+    },
+    "social":{
+        "fb" : "https://www.facebook.com/Mev-Ankara-College-MUN-109692628318723",
+        "twitter" : "https://twitter.com/macmunankara",
+        "insta":"https://www.instagram.com/mevcollegemun",
+        "yt":"https://www.youtube.com/channel/UC33YlVgUJIEma_X3l7M43_w"
+    }
+}

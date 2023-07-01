@@ -1,0 +1,29 @@
+{
+    "en":{
+        "lang":"en",
+        "title":"English Committees",
+        "uri":"english-committees",
+        "help":"Click on the photos to see committee information.",
+        "img":["ga1","ga2","ga3","ga4","ga5","ga6","unsc","nato","who","unicef","unep"],
+        "link":["ga1","ga2","ga3","ga4","ga5","ga6","unsc","nato","who","unicef","unep"],
+        "names":["GA1 DISEC", "GA2 ECOFIN", "GA3 SOCHUM", "GA4 SPECPOL","GA5 ADBUG", "GA6 LEGAL","UNSC", "NATO","WHO","UNICEF","UNEP"]
+    },
+    "tr":{
+        "lang":"tr",
+        "title":"Türkçe Komiteler",
+        "uri":"turkce-komiteler",
+        "help":"Fotoğraflara tıklayarak komite bilgilerini görebilirsiniz.",
+        "img":["tarih","felsefe"],
+        "link":["tarih","felsefe"],
+        "names":["Fütüristik Kriz Kabinesi","Felsefe"]
+    },
+    "de":{
+        "lang":"de",
+        "title":"Deutsche Komitees",
+        "uri":"deutsche-komitees",
+        "help":"Klicken Sie auf die Fotos, um Informationen zum Ausschuss anzuzeigen.",
+        "img":["deutsch"],
+        "link":["historisches-krisenkabinett"],
+        "names":["Historisches Krisenkabinett"]
+    }
+}

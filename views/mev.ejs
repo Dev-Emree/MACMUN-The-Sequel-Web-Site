@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>MEV Ankara College | MACMUN</title>
+	<%- include('includes/head') %>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="/public/css/mev.css" />
+</head>
+
+<body>
+	<% if(lang == 'english'){ text=en.text;title=en.title;slogan=en.slogan; %>
+	<%- include('includes/navbars'); %>
+	<% }else if(lang == 'turkce'){ text=tr.text;title=tr.title;slogan=tr.slogan; %>
+	<%- include('includes/tr-navbars'); %>
+	<% }else if(lang == 'deutsch'){ text=de.text;title=de.title;slogan=de.slogan; %>
+	<%- include('includes/de-navbars'); %>
+	<% } %>
+	<main>
+		<img class="background-image" src="/public/images/logo240x240.png" onclick="window.location.href='/'" />
+		<div class="c">
+			<h1><strong id="title" style="white-space: pre-wrap"><%-title%></strong></h1>
+			<h4>“<i id="slogan"><%-slogan%></i>”</h4>
+			<p id="text">
+				<%-text%>
+			</p>
+			<div class="link">
+				<b>For more information about MEV College : </b><a href="https://www.mevkolejiankara.k12.tr" target="_blank" alt="Mev College"><b>https://www.mevkolejiankara.k12.tr<i style="margin-left: 5px" class="fa-solid fa-arrow-up-right-from-square"></i></b></a>
+			</div>
+		</div>
+		<div onclick="window.open('https://dev-emre.web.app/', '_blank')" class="producer">
+			Produced by Emre Ekiz
+		</div>
+	</main>
+    <div class="flags">
+		<a href="/translate?lang=english&url=/about-us/mev-college" class="en lang">
+			<img src="/public/images/gb.webp" alt="English">
+		</a>
+		<a href="/translate?lang=turkce&url=/about-us/mev-college" class="tr lang">
+			<img src="/public/images/tr.webp" alt="Türkçe">
+		</a>
+		<a href="/translate?lang=deutsch&url=/about-us/mev-college" class="de lang">
+			<img src="/public/images/de.webp" alt="Deutsch">
+		</a>
+	</div>
+    <style>.lang:first-child,.lang:last-child{-moz-border-radius-topleft:6px}.flags{-moz-border-radius-topleft:5px;-moz-border-radius-topleft:5px;position:fixed;display:flex;align-items:center;justify-content:center;flex-direction:column;-webkit-border-bottom-left-radius:5px;-webkit-border-top-left-radius:5px;border-top-left-radius:5px;border-bottom-left-radius:5px;background-color:var(--overlay-color);right:0;bottom:25px;z-index:1000;border:1px solid #fff;border-right:none}.lang{cursor:pointer;padding:10px 15px 5px;transition:.3s linear .1s}.lang:hover{background:#fff}.lang:first-child{-webkit-border-top-left-radius:5px;border-top-left-radius:5px;border-bottom:1px solid #fff}.lang:last-child{-webkit-border-bottom-left-radius:5px;border-bottom-left-radius:5px;border-top:1px solid #fff}.lang img{width:30px}@media only screen and (max-width:900px){.lang img{width:20px}.lang{bottom:15px}}</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://kit.fontawesome.com/57e129c3a4.js" crossorigin="anonymous"></script>
+	<script src="/public/js/mev.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("html").on("contextmenu", function(e) {
+				return false;
+			});
+		});
+	</script>
+	<script src="/public/js/includes/navbars.js"></script>
+</body>
+
+</html>

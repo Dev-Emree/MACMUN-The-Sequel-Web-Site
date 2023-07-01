@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><%var path='/public/images/committees/';%>
+    <%if(lang == 'en'){%>
+    <%    var link_ = '/c/english-committees/';%>
+    <%}else if(lang == 'tr'){%>
+        <% var link_ = '/c/turkce-komiteler/';%>
+    <%}else{%>
+        <% var link_ = '/c/deutsche-komitees/';%>
+    <%}%>
+        <title><%= title %> | MACMUN</title>
+        <meta property="og:site_name" content="<%= title %>- | MACMUN" />
+        <meta property="og:url" content="https://mevcollegemun.org/<%= uri %>" />
+        <meta property="og:description" content="<%= title %>" />
+        <%- include('includes/head.ejs'); %>
+        <link rel="canonical" href="https://mevcollegemun.org/<%= uri %>" />
+        <link rel="stylesheet" href="/public/css/committees.css" />
+    </head>
+    <body>
+        <%if(lang == 'tr'){%>
+            <%- include('includes/tr-navbars.ejs'); %>
+        <%}else if(lang == 'de'){%>
+            <%- include('includes/de-navbars.ejs'); %>
+        <%}else{%>
+            <%- include('includes/navbars.ejs'); %>
+        <%}%>
+        <img src="/public/images/logo240x240.png" alt="Home" class="home-logo" onclick="window.location.href='/'" />
+        <main style="min-height: 100vh;height: auto;">
+            <section style="margin-bottom: 7.5vh;" id="committees">
+                <% for(var i=0; i<names.length;i++){ %>
+                    <div onclick="window.open('<%=link_+link[i]%>','_blank')" class="committees">
+                        <img src="<%= path+img[i]%>.webp">
+                        <h2><%= names[i] %></h2>
+                    </div>
+                <% }%>
+            </section>
+            <script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", () =>  {
+                    var co = document.querySelector('section');
+                    if(co.childElementCount == 1) {
+                        co.style="width:50vw";
+                        return;}
+                    var i = co.childElementCount%3,
+                        j = co.childElementCount%2,
+                        tmp='';
+                    if(i == 2){
+                        tmp="-2"
+                    }
+                    for(var k=co.childElementCount-i;k<co.childElementCount;k++){
+                        co.children[k].className += ` center2${tmp}`
+                    }for(k=co.childElementCount-j;k<co.childElementCount;k++){
+                        co.children[k].className += " center1"
+                    }
+                });
+            </script>
+        </main>
+        <div class="help">
+            <div class="help-content"><h5><%-help%></h5></div>
+            <div class="help-btn">
+                <h1>?</h1>
+            </div>
+        </div>
+        <div onclick="window.open('https://dev-emre.web.app/', '_blank')" class="producer">Produced by Emre Ekiz</div>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", ()=>{
+                document.querySelector('.help-btn').addEventListener("click", ()=>{
+                    var content = document.querySelector('.help-content>h5');
+                    if(content.classList.contains('help-inner')){
+                        content.classList.remove('help-inner')
+                    }else{
+                        content.classList.toggle('help-inner');
+                    }
+            });});
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
+        <script type="text/javascript" src="/public/js/includes/navbars.js"></script>
+        <script type="text/javascript" src="/public/js/teams.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("html").on("contextmenu", function (e) {
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>

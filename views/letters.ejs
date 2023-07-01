@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Letters | MACMUN</title>
+	<meta property="og:site_name" content="Letters | MACMUN" />
+	<meta property="og:url" content="https://mevcollegemun.org/about-us/letters" />
+	<meta property="og:description" content="The word “freedom” in our theme references not only to a global flow towards independence of the nations through liberatory actions of inter-country organizations, but also to the individuals' control over their life choices and their right to carry out a life of their own design." />
+	<%- include('includes/head.ejs') %>
+	<link rel="stylesheet" href="/public/css/letters.css" />
+
+</head>
+
+<body>
+	<% if(lang == 'deutsch'){ title=de.title;first={text:de.first.text,by:de.first.by};second={text:de.second.text,by:de.second.by}; %>
+	<%- include('includes/de-navbars'); %>
+	<% }else if(lang == 'turkce'){ title=tr.title;first={text:tr.first.text,by:tr.first.by};second={text:tr.second.text,by:tr.second.by}; %>
+	<%- include('includes/tr-navbars'); %>
+	<% }else{ title=en.title;first={text:en.first.text,by:en.first.by};second={text:en.second.text,by:en.second.by}; %>
+	<%- include('includes/navbars'); %>
+	<% } %>
+	<main>
+		<img class="background-image" src="/public/images/logo240x240.png" onclick="window.location.href='/'" />
+		<%if(en.first.text != ""){%>
+		<div style="margin-top: 35vh;" class="letters">
+			<div class="letter-title">
+				<center>
+					<h1 id="title1" style="padding-left: 25px; padding-right: 25px">
+						<%-title%>
+					</h1>
+				</center>
+			</div>
+			<div class="letter-inner">
+
+				<p id="text1" style="margin-bottom: 0;" class="letter-paragraph">
+					<%- first.text %>
+				<p id="by1" style="margin-bottom: 4vh">
+					<%- first.by %>
+				</p>
+			</div>
+		</div>
+		<%}%>
+      <%if(en.second.text != ""){%>
+		<div class="letters">
+			<div class="letter-title">
+				<center>
+					<h1 id="title2" style="padding-left: 25px; padding-right: 25px">
+						<%- title %>
+					</h1>
+				</center>
+			</div>
+			<div class="letter-inner">
+				<p id="text2" style="margin-bottom: 0;" class="letter-paragraph">
+					<%- second.text %>
+				<p id="by2" style="margin-bottom: 4vh">
+					<%- second.by %>
+				</p>
+				</p>
+			</div>
+		</div>
+		<%}%>
+      <div
+        onclick="window.open('https://dev-emre.web.app/', '_blank')"
+        class="producer"
+      >
+        Produced by Emre Ekiz
+      </div>
+    </main>
+	<div class="flags">
+		<a href="/translate?lang=english&url=/about-us/letters" class="en lang">
+			<img src="/public/images/gb.webp" alt="English">
+		</a>
+		<a href="/translate?lang=turkce&url=/about-us/letters" class="tr lang">
+			<img src="/public/images/tr.webp" alt="Türkçe">
+		</a>
+		<a href="/translate?lang=deutsch&url=/about-us/letters" class="de lang">
+			<img src="/public/images/de.webp" alt="Deutsch">
+		</a>
+	</div>
+    <style>.lang:first-child,.lang:last-child{-moz-border-radius-topleft:6px}.flags{-moz-border-radius-topleft:5px;-moz-border-radius-topleft:5px;position:fixed;display:flex;align-items:center;justify-content:center;flex-direction:column;-webkit-border-bottom-left-radius:5px;-webkit-border-top-left-radius:5px;border-top-left-radius:5px;border-bottom-left-radius:5px;background-color:transparent;right:0;bottom:25px;z-index:1000;border:1px solid #fff;border-right:none}.lang{cursor:pointer;padding:10px 15px 5px;transition:.3s linear .1s}.lang:hover{background:#fff}.lang:first-child{-webkit-border-top-left-radius:5px;border-top-left-radius:5px;border-bottom:1px solid #fff}.lang:last-child{-webkit-border-bottom-left-radius:5px;border-bottom-left-radius:5px;border-top:1px solid #fff}.lang img{width:30px}@media only screen and (max-width:900px){.lang img{width:20px}.lang{bottom:15px}}</style>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="/public/js/letters.js"></script>
+		<script src="/public/js/includes/navbars.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("html").on("contextmenu", function(e) {
+					return false;
+				});
+			});
+		</script>
+</body>
+
+</html>

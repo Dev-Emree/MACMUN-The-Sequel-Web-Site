@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<%- include('includes/head.ejs') %>
+	<title><%= title %> | MACMUN</title>
+	<link rel="stylesheet" href="/public/css/committee.css" />
+
+</head>
+
+<body>
+	<%if(lang == 'tr'){%>
+	<%- include('includes/tr-navbars.ejs'); %>
+	<%}else if(lang == 'de'){%>
+	<%- include('includes/de-navbars.ejs'); %>
+	<%}else{%>
+	<%- include('includes/navbars.ejs'); %>
+	<%}%>
+    <img
+      src="/public/images/logo240x240.png"
+      alt="Home"
+      class="home-logo"
+      onclick="window.location.href='/'"
+    />
+    <main>
+      <div class="info">
+        <h1>
+          <strong><%= title %></strong>
+	</h1>
+	<p>
+		<%- content %>
+	</p>
+	<div class="items">
+		<%if(USG != ""){%>
+		<h4>Under-Secretary-General: <%= USG %></h4>
+		<%}%>
+            <ul>
+            <% if(ai1_ == ""){%>
+		<%    ai1_ = "coming-soon";%>
+		<%}if (ai2_ == ""){%>
+		<%    ai2_ = "coming-soon";%>
+		<%} %>
+        <!--
+		<% if(ai1 != ""){ %>
+		<li>
+			Topic 1: <i><%= ai1 %>
+				<u class="guides" onclick="window.open('<%= ai1_ %>','_blank')"><br />Study Guide Here</u><i style="margin-left:5px;" class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+			</i>
+		</li>
+		<% } %>
+		<% if(ai2 != ""){ %>
+		<li>
+			Topic 2: <i><%= ai2 %>
+				<u class="guides" onclick="window.open('<%= ai2_ %>','_blank')"><br />Study Guide Here</u><i style="margin-left:5px;" class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+			</i>
+		</li>
+		<% } %>
+		</ul>
+        -->
+	</div>
+	</div>
+	<div onclick="window.open('https://dev-emre.web.app/', '_blank')" class="producer">
+		Produced by Emre Ekiz
+	</div>
+	</main>
+	<style>
+		main {
+			background: url("/public/images/committees/<%= bg %>.webp") no-repeat;
+			background-position: center;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/57e129c3a4.js" crossorigin="anonymous"></script>
+	<script src="/public/js/includes/navbars.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("html").on("contextmenu", function(e) {
+				return false;
+			});
+		});
+	</script>
+</body>
+
+</html>

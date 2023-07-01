@@ -1,0 +1,15 @@
+{
+    "mail" : "secreteriat@mevcollegemun.org",
+    "tel" : "+90 (312) 235 03 53",
+    "social":{
+        "fb":"https://www.facebook.com/Mev-Ankara-College-MUN-109692628318723",
+        "twitter":"https://twitter.com/macmunankara",
+        "insta":"https://www.instagram.com/mevcollegemun",
+        "yt":"https://www.youtube.com/channel/UC33YlVgUJIEma_X3l7M43_w"
+    },
+    "data":{
+        "english":["CONTACT US", "Email", "Phone"],
+        "turkce":["İLETİŞİM","E-posta","Telefon Numarası"],
+        "deutsch":["KONTAKT","E-Mail","Telefonnummer"]
+    }
+}

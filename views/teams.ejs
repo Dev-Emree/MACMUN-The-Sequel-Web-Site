@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><%var path='/public/images/heads/';%>
+        <title><%= title %>  Team | MACMUN</title>
+        <meta property="og:site_name" content="<%= title %> Team | MACMUN" />
+        <meta property="og:url" content="https://mevcollegemun.org/meet-the-team/<%= uri %>-team" />
+        <meta property="og:description" content="Meet the our <%= uri %> team." />
+        <%- include('includes/head.ejs'); %>
+        <link rel="canonical" href="https://mevcollegemun.org/meet-the-team/<%= uri %>-team" />
+        <link rel="stylesheet" href="/public/css/teams.css" />
+    </head>
+    <body>
+        <%- include('includes/navbars.ejs'); %>
+        <img src="/public/images/logo240x240.png" alt="Home" class="home-logo" onclick="window.location.href='/'" />
+        <main>
+            <div class="team-name">
+              <h1 class="team-title"><strong><%= title%> Team</strong></h1>
+            </div>
+            <section class="row1">
+                <img src="<%= path+heads[0] %>"/>
+            </section>
+            <section class="heads">
+                <% for(var i=1; i<heads.length;i++){ %> 
+                    <img src="<%= path+heads[i]%>">
+                <% }%>
+            </section>
+            <div onclick="window.open('https://dev-emre.web.app/', '_blank')" class="producer">Produced by Emre Ekiz</div>
+            <script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", () =>  {
+                    var heads = document.querySelector('.heads'),
+                        i = heads.childElementCount%3,
+                        j = heads.childElementCount%2,
+                        tmp='';
+                    if(i == 2){
+                        tmp="-2"
+                    }
+                    for(var k=heads.childElementCount-i;k<heads.childElementCount;k++){
+                        heads.children[k].className += `center2${tmp}`
+                    }for(k=heads.childElementCount-j;k<heads.childElementCount;k++){
+                        heads.children[k].className += " center1"
+                    }
+                });
+            </script>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
+        <script type="text/javascript" src="/public/js/includes/navbars.js"></script>
+        <script type="text/javascript" src="/public/js/teams.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("html").on("contextmenu", function (e) {
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>

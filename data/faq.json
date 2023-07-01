@@ -1,0 +1,103 @@
+{
+    "english":[
+        {
+            "q":"What is Model United Nations?",
+            "a":"Model United Nations (MUN) is an educational simulation in which students can learn about diplomacy, international relations, and the United Nations. At a MUN conference, students work as the representative of a country, organization, or person and must solve a problem with other delegates in their committee. MUN teaches participants skills like research, public speaking, debating, and writing skills as well as critical thinking, teamwork, and leadership."
+        },
+        {
+            "q":"What is the procedure of the conference?",
+            "a":"The MACMUN will be following the standard Harvard Procedure. Details of this procedure will be explained in the Rules of Procedure part of the handbook."
+        },
+        {
+            "q":"How do I prepare for MACMUN?",
+            "a":"Check our website when we upload the study guides and do detailed research on your allocated country’s stance regarding agenda items from trustworthy sources."
+        },
+        {
+            "q":"Can I join the committees that I want?",
+            "a":"You will list your committee preferences in your application and you will be allocated to a committee accordingly. However, bear in mind that the last decision is up to the Secretariat."
+        },
+        {
+            "q":"Where can I find the rules?",
+            "a":"The handbook includes detailed explanations of the rules and every participant will receive the handbook at the conference."
+        },
+        {
+            "q":"I’m a first-timer. What can I expect from this MUN?",
+            "a":"MUNs are great ways of learning about geopolitics and socializing with other people. We are sure you will conduct fruitful debates and make friendships that will last longer than our conference."
+        },
+        {
+            "q":"How do I get assigned to a country?",
+            "a":"You will receive an email from our PR Team once you get assigned a country by the Secretariat."
+        },
+        {
+            "q":"Do you provide accommodation and transportation?",
+            "a":"Shuttles between venues will be provided for every participant. For the delegates out of Ankara, accommodation and transportation from their hotels to the MEV College and back will be included in their fee. Transportation from the airport/terminal will not be provided."
+        }
+    ],
+    "turkce":[
+        {
+            "q":"Model Birleşmiş Milletler Nedir?",
+            "a":"Model Birleşmiş Milletler (MBM) öğrencilerin diplomasi, uluslararası ilişkiler ve Birleşmiş Milletler'e dair bilgi edinebilecekleri bir eğitim simülasyondur. MBM konferanslarında öğrenciler bir ülkeyi, organizasyonu veya karakteri temsil ederek komitelerindeki diğer delegeler ile verilen problemleri çözmeye çalışırlar. Model Birleşmiş Milletler katılımcılarına araştırma yapabilme, topluluk önünde konuşabilme, müzakerelerde bulunabilme ve etkili yazılar yazabilme yeteneği kazandırdığı gibi eleştirel düşünme, takım çalışması yapabilme ve liderlik gibi beceriler de kazandırmayı amaçlar."
+        },
+        {
+            "q":"Konferansın Prosedürü Ne Olacak?",
+            "a":"MACMUN'22 standart Harvard prosedürü kullanacaktır. Harvard prosedürü hakkında detaylı bilgi Konferans El Kitabı'nda Prosedür Kuralları bölümünde verilmiştir."
+        },
+        {
+            "q":"MACMUN’e Nasıl Hazırlanmalıyım?",
+            "a":"Çalışma rehberini okuyup komite konunuz ve temsil edeceğiniz ülkenin bu konu hakkındaki politikasını güvenilir kaynaklardan araştırarak çalışmalısınız."
+        },
+        {
+            "q":"İstediğim Komiteye Yerleştirilecek Miyim?",
+            "a":"Başvurunuzda belirttiğiniz komite tercihleriniz göz önüne alınarak yerleştirilmeniz yapılacaktır. Ancak yerleştirmelerde son kararın Sekreterlik’e ait olduğunu unutmamalısınız."
+        },
+        {
+            "q":"Kurallara Nereden Erişebilirim?",
+            "a":"Sizin için hazırladığımız El Kitabı tüm kuralları ve kuralların detaylı açıklamalarını içermektedir. El Kitabı'na sitemizden ulaşabilirsiniz."
+        },
+        {
+            "q":"İlk Kez Bir MBM Konferansına Katılıyorum, Buradan Beklentim Ne Olmalı?",
+            "a":"Model Birleşmiş Milletler jeopolitik bilgiler edinmeniz ve bir sürü yeni insanla tanışmanız için harika bir fırsattır. Konferansımız boyunca verimli ve öğretici tartışmalar yaparak kendinizi geliştireceğinizden ve uzun süreli dostluklar kuracağınızdan şüphemiz yok."
+        },
+        {
+            "q":"Bir Ülkeye Nasıl Atanacağım?",
+            "a":"Halkla ilişkiler ekibimiz, size atanan ülkeyi e-posta yolu ile size bildirecektir."
+        },
+        {
+            "q":"Konaklama ve Ulaşımı Karşılayacak Mısınız?",
+            "a":"Konferans etkinliklerini içeren yerlere gidiş-geliş konferans ücretine dahildir. Ayrıca MACMUN, anlaşmalı olduğu oteller ve MEV Koleji arasında ulaşımı da karşılayacaktır. Fakat havaalanı/terminal arası ulaşım karşılanmayacaktır."
+        }
+    ],"deutsch":[
+        {
+            "q":"Was ist MUN?",
+            "a":"Model United Nations (MUN) ist eine Bildungssimulation, bei der Schüler etwas über Diplomatie, internationale Beziehungen und die Vereinten Nationen lernen können. Bei einer MUN-Konferenz arbeiten die Schüler als Vertreter eines Landes, einer Organisation oder einer Person und müssen mit anderen Delegierten in ihrem Ausschuss ein Problem lösen. MUN vermittelt den Teilnehmern Fähigkeiten wie Recherche, öffentliches Reden, Debattieren und Schreiben sowie kritisches Denken, Teamarbeit und Führungsqualitäten."
+        },
+        {
+            "q":"Was ist das Verfahren der Konferenz?",
+            "a":"Die MACMUN wird nach dem Standardverfahren von Harvard durchgeführt. Einzelheiten zu diesem Verfahren werden im Teil \"Geschäftsordnung\" des Handbuchs erläutert."
+        },
+        {
+            "q":"Wie kann ich mich auf die Konferenz vorbereiten?",
+            "a":"Informieren Sie sich auf unserer Webseite, wenn wir die Studienführer hochladen, und recherchieren Sie in vertrauenswürdigen Quellen ausführlich über die Haltung des Ihnen zugewiesenen Landes zu den Tagesordnungspunkten."
+        },
+        {
+            "q":"Darf ich an jeden Gremien teilnehmen, die ich will?",
+            "a":"In Ihrer Bewerbung geben Sie die von Ihnen bevorzugten Ausschüsse an und Sie werden entsprechend einem Ausschuss zugewiesen. Beachten Sie jedoch, dass die letzte Entscheidung beim Sekretariat liegt."
+        },
+        {
+            "q":"Wo kann ich die Regeln finden?",
+            "a":"Das Handbuch enthält ausführliche Erläuterungen zu den Regeln und wird jedem Teilnehmer auf der Konferenz ausgehändigt."
+        },
+        {
+            "q":"Ich habe keine Erfahrung, was soll ich von der Konferenz erwarten?",
+            "a":"MUNs sind eine großartige Möglichkeit, etwas über Geopolitik zu lernen und neue Kontakte zu knüpfen. Wir sind sicher, dass Sie fruchtbare Debatten führen und Freundschaften schließen werden, die länger als unsere Konferenz dauern werden."
+        },
+        {
+            "q":"Wie werde ich einem Land zugeordnet?",
+            "a":"Sie erhalten eine E-Mail von unserem PR-Team, sobald Ihnen vom Sekretariat ein Land zugewiesen wurde."
+        },
+        {
+            "q":"Bieten Sie Unterkunft und Transport an?",
+            "a":"Für alle Teilnehmer wird ein Shuttle-Service zwischen den Veranstaltungsorten angeboten. Für die Delegierten außerhalb Ankara sind die Unterkunft und der Transport vom Hotel zum MEV College und zurück in der Gebühr enthalten. Der Transport vom Flughafen/Terminal ist nicht vorgesehen."
+        }
+    ]
+}

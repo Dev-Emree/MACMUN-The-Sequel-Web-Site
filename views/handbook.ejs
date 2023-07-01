@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta property="og:site_name" content="Hanbooks | MACMUN" />
+	<title>Handbooks | MACMUN</title>
+    <%- include('includes/head.ejs') %> 
+	<link rel="stylesheet" href="/public/css/handbook.css" />
+	<link rel="shortcut icon" href="/public/images/logo240x240.png" type="image/x-icon" />
+</head>
+
+<body>
+	<%- include('includes/navbars.ejs') %>
+    <img onclick="window.location.href='/'" src="/public/images/logo240x240.png" alt="Home" class="home-logo">
+    <main>
+		<div class="books">
+			<div onclick="window.open('<%=en%>','_blank');" class="book">
+				<h1>HANDBOOK</h1>
+			</div>
+			<div onclick="window.open('<%=tr%>','_blank')" class="book">
+				<h1>EL KİTABI</h1>
+			</div>
+			<div onclick="window.open('<%=de%>','_blank')" class="book">
+				<h1>HANDBUCH</h1>
+			</div>
+		</div>
+		<div onclick="window.open('https://dev-emre.web.app/', '_blank')" class="producer"> Produced by Emre Ekiz </div>
+	</main>
+	<script src="/public/js/includes/navbars.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("html").on("contextmenu", function(e) {
+				return false;
+			});
+		});
+	</script>
+</body>
+
+</html>

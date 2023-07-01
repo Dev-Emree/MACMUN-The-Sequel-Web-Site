@@ -1,0 +1,256 @@
+:root {
+    --primary-color: rgb(70, 10, 22);
+    --overlay-color: rgba(9, 10, 15, 0.9);
+    --menu-speed: 1s;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body {
+    width: 100vw;
+    background-color: #090a0f;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    user-select: text;
+    cursor: default;
+}
+.home-logo {
+    height: 11vh;
+    position: fixed;
+    margin-left: 2vw;
+    margin-top: 1vh;
+    background-color: #fff;
+    z-index: 9;
+    min-height: 70px;
+    top: 0.5vh;
+    left: 3%;
+    background: 0 0;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20vh;
+    background-color: #090a0f;
+    line-height: 1;
+}
+
+section {
+    background-color: rgba(231, 231, 231, 0.9);
+    padding: 4vh 0;
+    -webkit-border-radius: 2vh;
+    -moz-border-radius: 2vh;
+    border-radius: 2vh;
+    margin-bottom: 20vh;
+    min-width: 350px;
+    width: 65vw;
+    transition: width 0.25s;
+}
+
+@media screen and (max-width: 400px) {
+    section {
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    section {
+        min-width: 250px;
+    }
+}
+
+h2 {
+    font-family: Nunito, sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    position: relative;
+    padding: 5px 0;
+    user-select: none;
+    transition: font-size 0.5s ease-in-out;
+}
+
+.parent-container {
+    padding: 0 20px 20px 20px;
+}
+
+.faq {
+    list-style: none;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.faq li {
+    border-bottom: 1px solid #999;
+    margin-bottom: 15px;
+    transition: font-size 0.25s;
+}
+
+.faq li.active .answer {
+    max-height: 500px !important;
+    padding-bottom: 25px;
+    transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+}
+
+.faq li.active .question h2 {
+    transition: font-size 0.5s ease;
+    font-size: 1.35em;
+}
+
+.faq .answer {
+    color: #090909;
+    font-family: Nunito, sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+}
+
+.faq .plus-minus-toggle {
+    cursor: pointer;
+    height: 21px;
+    position: absolute;
+    width: 21px;
+    left: -40px;
+    top: 50%;
+    z-index: 2;
+}
+
+.faq .plus-minus-toggle:after,
+.faq .plus-minus-toggle:before {
+    background: #000;
+    content: "";
+    height: 5px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 21px;
+    transition: transform 0.5s ease;
+}
+
+.faq .plus-minus-toggle:after {
+    transform-origin: center;
+}
+
+.faq .plus-minus-toggle.collapsed:after {
+    transform: rotate(90deg);
+}
+
+.faq .plus-minus-toggle.collapsed:before {
+    transform: rotate(180deg);
+}
+
+.faq .question {
+    color: #090a0f;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: color 0.5s ease;
+}
+
+@media screen and (max-width: 1200px) {
+    h2 {
+        font-size: 1em;
+    }
+
+    .faq li.active .question h2 {
+        font-size: 1.15em;
+    }
+
+    .faq .answer {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    h2 {
+        font-size: 0.9em;
+    }
+
+    .faq li.active .question h2 {
+        font-size: 1.04em;
+    }
+
+    section {
+        width: 75vw;
+    }
+
+    .faq .answer {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section {
+        width: 90vw;
+    }
+
+    h2 {
+        font-size: 0.8em;
+    }
+
+    .faq li.active .question h2 {
+        font-size: 0.95em;
+    }
+
+    section {
+        width: 75vw;
+    }
+
+    .faq .answer {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        width: 95vw;
+    }
+}
+
+.producer {
+    bottom: 2px;
+    width: 100vw;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.7s ease 0.1s;
+}
+
+.producer:hover {
+    color: #fff;
+}

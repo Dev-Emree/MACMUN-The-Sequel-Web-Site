@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us | MACMUN</title>
+    <meta property="description" content="Contact our teams.">
+    <meta property="og:site_name" content="Contact Us">
+    <meta property="og:url" content="https://mevcollegemun.org/contact-us">
+    <%- include('includes/head.ejs') %> 
+    <link rel="canonical" href="https://mevcollegemun.org/contact-us">
+    <link rel="stylesheet" href="/public/css/contact.css">
+</head>
+
+<body>
+    <% if(lang == 'deutsch'){ %>
+	<%- include('includes/de-navbars'); %>
+	<% }else if(lang == 'turkce'){ %>
+	<%- include('includes/tr-navbars'); %>
+	<% }else{ %>
+	<%- include('includes/navbars'); %>
+	<% } %>
+    <img class="home-logo" src="/public/images/logo240x240.png" onclick="window.location.href='/'">
+    <main>
+        <div id="top" class="mev"></div>
+        <section id="contact-us">
+            <h1 class="title"><%= data[0] %></h1>
+            <div class="info">
+                <div class="mails">
+                    <h3 id="email"><%=data[1]%>,</h3>
+                    <div style="margin-top:0"> <a href="mailto:<%=mail%>" class="mail"><%=mail%></a> </div>
+                    <div class="tel">
+                        <h3 id="tel"><%=data[2]%> ,</h3>
+                        <a class="phone" href="tel:<%=tel%>"><%=tel%></a></div>
+                    <div class="social">
+                        <div class="wrapper">
+                            <div data-nosnippet onclick="window.open('<%=social.fb%>','_blank')" class="icon facebook">
+                                <div class="tooltip">Facebook</div><span><i class="fab fa-facebook-f"></i></span> </div>
+                            <div data-nosnippet onclick="window.open('<%=social.twitter%>','_blank')" class="icon twitter">
+                                <div class="tooltip">Twitter</div>
+                                <a></a><span class="link-twitter"><i class="fab fa-twitter"></i></span></a>
+                            </div>
+                            <div data-nosnippet onclick="window.open('<%=social.insta%>','_blank')" class="icon instagram">
+                                <div class="tooltip">Instagram</div><span><i class="fab fa-instagram"></i></span> </div>
+                            <div data-nosnippet onclick="window.open('<%=social.yt%>','_blank')" class="icon youtube">
+                                <div class="tooltip">Youtube</div><span><i class="fab fa-youtube"></i></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="others">
+                    <div class="map"> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12243.847743801716!2d32.6868585!3d39.8974845!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb00665959954f6c9!2sMilli%20E%C4%9Fitim%20Vakf%C4%B1%20Koleji%20%C3%96zel%20Ankara%20Okullar%C4%B1!5e0!3m2!1str!2str!4v1646412648729!5m2!1str!2str"
+                            width="440" height="330" allowfullscreen="" loading="lazy"></iframe> </div>
+                    <div class="address">
+                        <h3>Koru Mah. 2558. Sok. No:7/1<br>Çankaya / Ankara</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div onclick="window.open('https://dev-emre.web.app/', '_blank')" class="producer">Produced by Emre Ekiz</div>
+    </main>
+    <div class="flags">
+		<a href="/translate?lang=english&url=/contact-us" class="en lang">
+			<img src="/public/images/gb.webp" alt="English">
+		</a>
+		<a href="/translate?lang=turkce&url=/contact-us" class="tr lang">
+			<img src="/public/images/tr.webp" alt="Türkçe">
+		</a>
+		<a href="/translate?lang=deutsch&url=/contact-us" class="de lang">
+			<img src="/public/images/de.webp" alt="Deutsch">
+		</a>
+	</div>
+    <style>.lang:first-child,.lang:last-child{-moz-border-radius-topleft:6px}.flags{-moz-border-radius-topleft:5px;-moz-border-radius-topleft:5px;position:fixed;display:flex;align-items:center;justify-content:center;flex-direction:column;-webkit-border-bottom-left-radius:5px;-webkit-border-top-left-radius:5px;border-top-left-radius:5px;border-bottom-left-radius:5px;background-color:var(--overlay-color);right:0;bottom:25px;z-index:1000;border:1px solid #fff;border-right:none}.lang{cursor:pointer;padding:10px 15px 5px;transition:.3s linear .1s}.lang:hover{background:#fff}.lang:first-child{-webkit-border-top-left-radius:5px;border-top-left-radius:5px;border-bottom:1px solid #fff}.lang:last-child{-webkit-border-bottom-left-radius:5px;border-bottom-left-radius:5px;border-top:1px solid #fff}.lang img{width:30px}@media only screen and (max-width:900px){.lang img{width:20px}.lang{bottom:15px}}</style>
+    <script src="/public/js/includes/navbars.js"></script>
+    <script src="https://kit.fontawesome.com/57e129c3a4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("html").on("contextmenu", function(e) {
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>
