@@ -27,7 +27,6 @@ To ensure the event's visibility in search engines and encourage those who are u
 > # Preview
 
 You can view the front-end code <a href="https://the-sequel.mevcollegemun.org" target="_blank">here</a>.
-Note: The link only displays the front-end code, and the code requiring backend functionality does not work on the provided link. You can access the backend code from this repository.
 
 > # Missing Pages
 
