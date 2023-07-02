@@ -1,7 +1,7 @@
 ![MACMUN Logo](./public/images/logo240x240.png)
 # MACMUN The Sequel
 
-Birleşmiş Milletler Simülasyonu(MUN) öğrenciler arasında birleşmiş milletleri ilgilendiren konular hakkında münazara yapılması üzerine kurulan hem katılanların sosyalleşmesi hem de ingilizcelerini geliştirmeyi hedefleyen etkinliktir. <a href="https://mevcollegemun.web.app/" target="_blank">Mev College Model United Nations'ta</a> ise Özel Ankara MEV Okulu tarafından yapılan birleşmiş milletler simülasyonudur. Okulun bir öğrencisi olarak ben de BT takımının başında yer aldım ve siteyi yapmak benim görevimdi.
+Birleşmiş Milletler Simülasyonu(MUN) öğrenciler arasında birleşmiş milletleri ilgilendiren konular hakkında münazara yapılması üzerine kurulan hem katılanların sosyalleşmesi hem de ingilizcelerini geliştirmeyi hedefleyen etkinliktir. <a href="https://the-sequel.mevcollegemun.org" target="_blank">Mev College Model United Nations'ta</a> ise Özel Ankara MEV Okulu tarafından yapılan birleşmiş milletler simülasyonudur. Okulun bir öğrencisi olarak ben de BT takımının başında yer aldım ve siteyi yapmak benim görevimdi.
 
 ## Sitenin Amacı
 Yapılan etkinliğin arama motorlarında çıkmasını sağlamak ve etkinliğe katılmak konusunda kararsız kalanların etkinliğe dahil olmalarını sağlamak.
