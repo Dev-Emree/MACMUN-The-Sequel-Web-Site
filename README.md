@@ -26,8 +26,12 @@ Yapılan etkinliğin arama motorlarında çıkmasını sağlamak ve etkinliğe k
 
 > # Ön İzleme
 
-Ön uç kodlarını <a href="https://mevcollegemun.web.app/" target="_blank">buradan</a> görebilirsiniz.
+Ön uç kodlarını <a href="https://the-sequel.mevcollegemun.org" target="_blank">buradan</a> görebilirsiniz.
 Not: Link sadece ön uç kodlarını gösterir ve linkte arka uç gerektiren kodlar çalışmamaktadır. Arka uç kodlarına bu repository'den ulaşabilirsiniz.
 
 > # İngilizce README dosyası
 <a href="https://github.com/Dev-Emree/MACMUN-The-Sequel-Web-Site/blob/main/README.en.md">Buradan</a> ulaşabilirsiniz.
+
+> # Eksik Sayfalar
+- `/conference` dizinindeki eksik sayfaların hazır olmasına rağmen Milli Eğitim Bakanlığı tarafından paylaşılmasına izin verilmediği için coming-soon sayfasına yönlendirmektedir.
+- `/academic-team` ve `/organization-team` dizinlerinde fotoğrafları olması gereken kişiler **KVKK** Metnini imzalamadıkları için paylaşmam kanunen yasak.
