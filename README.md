@@ -27,7 +27,6 @@ Yapılan etkinliğin arama motorlarında çıkmasını sağlamak ve etkinliğe k
 > # Ön İzleme
 
 Ön uç kodlarını <a href="https://the-sequel.mevcollegemun.org" target="_blank">buradan</a> görebilirsiniz.
-Not: Link sadece ön uç kodlarını gösterir ve linkte arka uç gerektiren kodlar çalışmamaktadır. Arka uç kodlarına bu repository'den ulaşabilirsiniz.
 
 > # İngilizce README dosyası
 <a href="https://github.com/Dev-Emree/MACMUN-The-Sequel-Web-Site/blob/main/README.en.md">Buradan</a> ulaşabilirsiniz.
