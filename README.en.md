@@ -28,3 +28,8 @@ To ensure the event's visibility in search engines and encourage those who are u
 
 You can view the front-end code <a href="https://mevcollegemun.web.app/" target="_blank">here</a>.
 Note: The link only displays the front-end code, and the code requiring backend functionality does not work on the provided link. You can access the backend code from this repository.
+
+> # Missing Pages
+
+- The missing pages in the `/conference` directory are ready, but they are being redirected to a coming-soon page because the Ministry of National Education has not granted permission for their release.
+- The individuals who should have their photos in the `/academic-team` and `/organization-team` directories are prohibited by law from sharing their photos because they have not signed the **KVKK** (Personal Data Protection Law) text.
