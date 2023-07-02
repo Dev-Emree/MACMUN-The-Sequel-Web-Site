@@ -1,8 +1,8 @@
 {
     "counter":{
-        "english":["COUNTDOWN","Days","Hours","Minutes","Seconds","14-16 October","CONTACTS","Scroll"],
-        "turkce":["GERİ SAYIM","Gün", "Saat", "Dakika", "Saniye", "14-16 Ekim","İletişim", "Kaydır"],
-        "deutsch":["COUNTDOWN","Tage","Stunden","Minuten","Sekunden","14.-16. Oktober","KONTAKTE","Scrollen"]
+        "english":["COUNTDOWN","Days","Hours","Minutes","Seconds","14-16 September","CONTACTS","Scroll"],
+        "turkce":["GERİ SAYIM","Gün", "Saat", "Dakika", "Saniye", "14-16 Eylül","İletişim", "Kaydır"],
+        "deutsch":["COUNTDOWN","Tage","Stunden","Minuten","Sekunden","14.-16. September","KONTAKTE","Scrollen"]
     },
     "date":1694649600000,
     "contacts":{
